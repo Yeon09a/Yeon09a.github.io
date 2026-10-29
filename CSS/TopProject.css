@@ -1,0 +1,393 @@
+﻿.header-introduction {
+    padding: var(--space-6) var(--padding-wid);
+}
+
+#name-main {
+    line-height: 1.1;
+    font-size: var(--fs-hero);
+}
+
+.header-introduction h2 {
+    margin-top: var(--space-2);
+    font-size: var(--fs-heading);
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--color-muted);
+}
+
+.section-main {
+    padding: var(--space-3) var(--padding-wid);
+}
+
+.section-main h2{
+    margin-bottom: var(--space-3);
+    font-size: var(--fs-heading);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+#projects {
+    background-color: #f5f7fa;
+}
+.mainCard-project{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-3);
+    border: 1px solid transparent;
+    background-color: white;
+    gap: var(--space-3);
+}
+    .part01-project {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--space-4);
+    }
+        .mainImage-project {
+            flex: 0 1 40%;
+            min-width: 0;
+            background-color: var(--color-accent);
+            aspect-ratio: 16 / 11.5;
+        }
+        .info-project {
+            min-width: var(--padding-wid);
+            flex: 1 1 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            align-self: stretch;
+        }
+            .infoHeader-project{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: var(--space-2);
+            }
+                .title-project {
+                    font-size: var(--fs-title);
+                    font-weight: 700;
+                    line-height: 1.0;
+                }
+                .linklist-project{
+                    display: flex;
+                    gap: var(--space-1);
+                }
+                .link-project {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: var(--space-1);
+                    padding: 4px 12px;
+                    background-color: var(--color-text);
+                    color: white;
+                    text-decoration: none;
+                    font-size: var(--fs-small);
+                }
+
+                    .link-github:hover {
+                        color: var(--color-accent);
+                    }
+
+                .taglist-project {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: var(--space-1);
+                }
+                .tag-project{
+                    padding: 4px 12px;
+                    border: 1px solid var(--color-border);
+                    font-size: var(--fs-small);
+                }
+                .desc-project{
+                    max-width: 70ch;
+                    line-height: 1.7;
+                }
+
+                .rtpp-project{
+                        display: flex;
+                    }
+                        .rtpp-project li{
+                            flex: 1;
+                            min-width: 0;
+                        }
+
+                    .tp-project{
+                        display: flex;
+                    }
+                        .tp-project li{
+                            flex: 1;
+                            min-width: 0;
+                        }
+                            .itemTitle-project{
+                                font-weight: 700;
+                            }
+                            .itemDesc-project{
+                    
+                            }
+    
+        .cc-project {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+        .myConTitle-project {
+            margin-bottom: var(--space-1);
+            font-weight: 700;
+        }
+.techTitle-project {
+    margin-bottom: var(--space-1);
+    font-weight: 700;
+}
+
+        .ccItem-project{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cc-project li ul {
+            display: grid;
+            gap: var(--space-1);
+            grid-template-columns: repeat(2, 1fr);
+        }
+            .cc-project li ul li {
+                min-width: 0;
+                padding: 12px 12px;
+                border: 1px solid var(--color-border);
+                display: flex;
+                gap: var(--space-2);
+                align-items: flex-start;
+            }
+                .itemImage-project {
+                    flex: 0 0 25%;
+                    min-width: 0;
+                    background-color: var(--color-accent);
+                    aspect-ratio: 1 / 1;
+                }
+
+.itemInfp-project {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+                        .cTitle-project{
+                            font-weight: 700;
+                        }
+
+         .cc-project li a {
+             padding: 16px 0px;
+             border: 1px solid var(--color-border);
+             background: white;
+             font-family: inherit;
+             font-size: var(--fs-small);
+             font-weight: 700;
+             cursor: pointer;
+             margin: var(--space-2) 0px;
+             width: 100%;
+             text-decoration: none;
+             color: inherit;
+             text-align: center;
+         }
+
+              .cc-project li a:hover {
+                  background: #f0f0f0;
+              }
+
+        #tCList-project {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+            #tCList-project li {
+                padding: 6px 12px;
+            }
+
+.sub-project {
+    padding: var(--space-3);
+    border: 1px solid transparent;
+    background-color: white;
+}
+    .subList-project{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-1);
+    }
+
+.subCard-project {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 12px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+            .subIImage-project {
+                flex: 0 0 1;
+                min-width: 0;
+                background-color: var(--color-accent);
+                aspect-ratio: 16 / 9;
+            }
+            .subIInfo-project{
+                display:flex;
+                flex-direction:column;
+                gap: var(--space-2);
+            }
+            .sTitle-project {
+                font-weight: 700;
+                font-size: var(--fs-heading);
+            }
+            .subrtp-project {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-1)
+            }
+            .subCard-project a {
+                padding: 16px 0px;
+                border: 1px solid var(--color-border);
+                background: white;
+                font-family: inherit;
+                font-size: var(--fs-small);
+                font-weight: 700;
+                cursor: pointer;
+                width: 100%;
+                text-decoration: none;
+                text-align: center;
+                color: inherit;
+            }
+                .subCard-project a:hover {
+                    background: #f0f0f0;
+                }
+
+.other-project {
+    padding: var(--space-3);
+    border: 1px solid transparent;
+    background-color: white;
+}
+    .otherList-project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-1);
+    }
+.otherCard-project {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 12px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    gap: var(--space-2);
+    align-items: flex-start;
+}
+            .otherIImage-project {
+                flex: 0 0 30%;
+                min-width: 0;
+                background-color: var(--color-accent);
+                aspect-ratio: 1 / 1;
+            }
+
+.otherIInfo-project {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--space-1);
+    align-self: stretch;
+}
+
+            .oTitle-project {
+                font-weight: 700;
+                font-size: var(--fs-heading)
+            }
+            .otherIInfo-project a {
+                margin-top: auto;
+                padding: 8px 0px;
+                border: 1px solid var(--color-border);
+                background: white;
+                font-family: inherit;
+                font-size: var(--fs-small);
+                font-weight: 700;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                color: inherit;
+            }
+                .otherIInfo-project a:hover {
+                    background: #f0f0f0;
+                }
+
+#about {
+    background-color: #6d6d6d;
+}
+
+
+#resume {
+    background-color: #f5f7fa;
+}
+
+#contact {
+    background-color: #f5f7fa;
+}
+
+@media(max-width: 1280px), (orientation: portrait) {
+    .part01-project {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-3);
+    }
+
+    .mainImage-project {
+        flex: none;
+        width: 100%;
+    }
+
+    .info-project {
+        flex: none;
+        min-width: 0;
+    }
+
+    .cc-project li ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subList-project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .otherList-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width: 640px) {
+    .part01-project {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-3);
+    }
+
+    .mainImage-project {
+        flex: none;
+        width: 100%;
+    }
+
+    .info-project {
+        flex: none;
+        min-width: 0;
+    }
+
+    .cc-project li ul {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .subrtp-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #tCList-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .subList-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .otherList-project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

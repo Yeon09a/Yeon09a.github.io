@@ -1,0 +1,112 @@
+﻿.section-technicalC {
+    background-color: #f5f7fa;
+}
+
+.headerImage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--color-accent);
+    gap: var(--space-1);
+    padding: var(--space-3) var(--padding-wid);
+}
+
+.technicalCPage {
+    font-size: var(--fs-small);
+    font-weight: 700;
+}
+
+.projectTitle {
+    font-size: var(--fs-hero);
+}
+
+.taglist-project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+.tag-project {
+    padding: 4px 12px;
+    border: 1px solid var(--color-border);
+    font-size: var(--fs-small);
+}
+
+.taglink {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.linklist-project {
+    display: flex;
+    gap: var(--space-1);
+}
+
+.link-project {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: 4px 12px;
+    background-color: var(--color-text);
+    color: white;
+    text-decoration: none;
+    font-size: var(--fs-small);
+}
+
+.link-github:hover {
+    color: var(--color-accent);
+}
+
+.technicalCBody {
+    display: grid;
+    grid-template-columns: minmax(0, var(--padding-wid)) minmax(0, 1fr) minmax(0, var(--padding-wid));
+    align-items: start;
+}
+
+.sideBar {
+    text-align: center;
+    position: sticky;
+    justify-content: center;
+    top: 60px;
+    height: calc(100vh-60px);
+}
+
+#sideBarTitle {
+    font-weight: 500;
+    margin-bottom: var(--space-2);
+}
+
+.sideBar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+    .sideBar nav a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+
+        .sideBar nav a:hover {
+            color: var(--color-accent);
+        }
+
+        .sideBar nav a:active {
+            font-weight: 700;
+        }
+
+.item-technicalC {
+    padding: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.itemTitle {
+    font-size: var(--fs-title);
+    font-weight: 700;
+    line-height: 1.0;
+}

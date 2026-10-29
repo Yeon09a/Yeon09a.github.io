@@ -1,0 +1,274 @@
+﻿.headerImage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--color-accent);
+    gap: var(--space-1);
+    padding: var(--space-3) var(--padding-wid);
+}
+
+.projectDPage {
+    font-size: var(--fs-small);
+    font-weight: 700;
+}
+
+.projectTitle {
+    font-size: var(--fs-hero);
+}
+
+.taglist-project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+}
+
+.tag-project {
+    padding: 4px 12px;
+    border: 1px solid var(--color-border);
+    font-size: var(--fs-small);
+}
+
+.taglink {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.linklist-project {
+    display: flex;
+    gap: var(--space-1);
+}
+
+.link-project {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: 4px 12px;
+    background-color: var(--color-text);
+    color: white;
+    text-decoration: none;
+    font-size: var(--fs-small);
+}
+
+.link-github:hover {
+    color: var(--color-accent);
+}
+
+.section-projectD {
+    padding: var(--space-3) var(--padding-wid);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    background-color: #f5f7fa;
+}
+
+.rtpp-project {
+    display: flex;
+}
+
+    .rtpp-project li {
+        flex: 1;
+        min-width: 0;
+    }
+
+.tp-project {
+    display: flex;
+}
+
+    .tp-project li {
+        flex: 1;
+        min-width: 0;
+    }
+
+.itemTitle-project {
+    font-weight: 700;
+}
+
+.itemDesc-project {
+}
+
+.overview, .contribution, .technicalC{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.gallery-overview{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--space-2);
+    aspect-ratio: 5 / 2;
+}
+
+.imageMain-overview {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    background-color: var(--color-accent);
+    grid-row: 1 / 3;
+}
+
+.imageSub-overview {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    object-fit: cover;
+    background-color: var(--color-accent);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-3);
+    border: 1px solid transparent;
+    background-color: white;
+    gap: var(--space-3);
+}
+
+.title {
+    font-size: var(--fs-heading);
+    font-weight: 700;
+}
+
+.itemList-contribution{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.item-contribution{
+    display: flex;
+    gap: var(--space-3);
+}
+
+.image-contribution {
+    flex: 0 0 20%;
+    min-width: 0;
+    background-color: var(--color-accent);
+    aspect-ratio: 16 / 9;
+}
+
+.itemTitle-contribution {
+    font-weight: 700;
+}
+
+.desc-contribution{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.itemList-technicalC {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.item-technicalC {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.image-technicalC {
+    flex: 0 0 20%;
+    min-width: 0;
+    background-color: var(--color-accent);
+    aspect-ratio: 16 / 9;
+}
+
+.itemTitle-technicalC {
+    font-weight: 700;
+}
+
+.desc-technicalC {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+@media(max-width: 1280px), (orientation: portrait) {
+    
+}
+
+
+
+@media(max-width: 854px) {
+    .item-contribution {
+        flex-direction: column;
+    }
+    
+    .image-contribution {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .item-technicalC {
+        flex-direction: column;
+    }
+
+    .image-technicalC {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .gallery-overview {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        aspect-ratio: auto;
+    }
+
+    .imageMain-overview {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        grid-row: auto;
+    }
+
+    .imageSub-overview {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media(max-width: 640px) {
+    .item-contribution {
+        flex-direction: column;
+    }
+    
+    .image-contribution {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .item-technicalC {
+        flex-direction: column;
+    }
+
+    .image-technicalC {
+        flex: none;
+        min-width: 100%;
+    }
+
+    .gallery-overview {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        aspect-ratio: auto;
+    }
+
+    .imageMain-overview {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        grid-row: auto;
+    }
+
+    .imageSub-overview {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}

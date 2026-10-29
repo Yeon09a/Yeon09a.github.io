@@ -1,0 +1,89 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Arial, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.topBar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--padding-wid);
+}
+
+#name {
+    display: flex;
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
+.topBar nav {
+    display: flex;
+    margin-left: auto;
+    gap: var(--space-2);
+}
+
+    .topBar nav a {
+        text-decoration: none;
+        color: var(--color-text);
+    }
+
+        nav a:hover {
+            color: var(--color-accent);
+        }
+
+.languageBtns {
+    display: flex;
+    gap: var(--space-1);
+}
+
+    .languageBtns button {
+        padding: 4px 12px;
+        border: 1px solid var(--color-border);
+        background: white;
+        font-family: inherit;
+        font-size: var(--fs-small);
+        cursor: pointer;
+    }
+
+        .languageBtns button:hover {
+            background: #f0f0f0;
+        }
+
+footer {
+    padding: var(--space-3) var(--padding-wid);
+    text-align: center;
+}
+
+
+@media(max-width: 1280px), (orientation: portrait) {
+    :root {
+        --padding-wid: 60px;
+        --fs-hero: 3rem;
+        --fs-title: 2rem;
+    }
+}
+
+@media(max-width: 640px) {
+    :root {
+        --padding-wid: 60px;
+        --fs-hero: 3rem;
+        --fs-title: 2rem;
+    }
+}

@@ -1,0 +1,20 @@
+﻿:root {
+    --padding-wid: 300px;
+    --fs-hero: 5rem;
+    --fs-title: 3rem;
+    --fs-heading: 1.5rem;
+    --fs-body: 1rem;
+    --fs-small: 0.875rem;
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 32px;
+    --space-4: 48px;
+    --space-5: 64px;
+    --space-6: 96px;
+    --color-text: #222;
+    --color-muted: #555;
+    --color-accent: #0077ff;
+    --color-border: #333;
+    --color-project: #ddd;
+    --bg-soft: #f5f7fa;
+}
